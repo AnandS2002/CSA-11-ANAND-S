@@ -13,7 +13,13 @@ void main()
       if(string[i]==' ')
       {
         count++;
+        while(string[i]==' ')
+        {
+          i++;
+        }
+        
       }
+
     }
     count++;
     printf("The number of words in the string is %d",count);
